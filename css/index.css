@@ -1,0 +1,72 @@
+.content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 4.5rem;
+    background-color: #31b3ff;
+    padding: 24px;
+    width: calc(100vw - 64px);
+    margin: 8px auto;
+    border-radius: 8px;
+}
+
+.about {
+    background-color: #fff;
+    padding: 12px;
+    text-align: center;
+    border-radius: 12px;
+}
+
+.content__about__link a {
+    color: #000;
+}
+
+.links-container {
+    width: 45%;
+    text-align: center;
+}
+
+.links {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 8rem;
+    padding: 36px 8px;
+}
+
+.links li {
+    list-style: none;
+    width: 100%;
+    text-align: center;
+    padding: 48px 0;
+    background-position: center;
+    border-radius: 8px;
+}
+
+.links li a {
+    text-decoration: none;
+    color: #f5f5f5;
+    font-size: 1.75em;
+}
+
+.links-matematica {
+    background: url('https://static.vecteezy.com/system/resources/thumbnails/007/161/071/small/hand-drawn-physic-formulas-science-knowledge-education-chem-formula-and-physics-math-formula-and-physics-white-background-hand-drawn-line-math-formula-and-physics-formula-vector.jpg');
+}
+
+.links-lengua {
+    background: url('https://img.europapress.es/fotoweb/fotonoticia_20150129093656_420.jpg');
+}
+
+.links-historia {
+    background: url('https://www.contrainfo.com/wp-content/uploads/2015/08/historia-y-verdad.jpg');
+}
+
+.links-programacion {
+    background: url('https://concepto.de/wp-content/uploads/2014/08/programacion-2-e1551291144973.jpg');
+}
+
+.links-biologia {
+    background: url('https://encolombia.com/wp-content/uploads/2021/09/Biologia.jpg');
+}

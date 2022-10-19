@@ -1,0 +1,42 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    font-family: sans-serif;
+}
+
+body {
+    background-color: #2c2c28;
+}
+
+.header {
+    margin: 8px auto;
+    width: calc(100vw - 64px);
+    text-align: center;
+    background-color: #2e2e28;
+    padding: 72px 24px;
+    color: #fff;
+    background: url('https://static.wixstatic.com/media/11062b_a6e1bb8d93704b859a65ba5d3dd3645a~mv2.jpg/v1/fill/w_1253,h_361,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/11062b_a6e1bb8d93704b859a65ba5d3dd3645a~mv2.jpg');
+    background-position: center;
+    border-radius: 8px;
+}
+
+.header h1 {
+    display: inline-block;
+}
+
+.subtitle {
+    font-size: 1.25em;
+}
+
+.footer {
+    background-color: #6f4e37;
+    text-align: center;
+    padding: 12px;
+}
+
+.credits {
+    text-align: end;
+    font-weight: bold;
+}
