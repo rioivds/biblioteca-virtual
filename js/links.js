@@ -2,46 +2,47 @@ const links = [
     {
         link: 'https://i.pinimg.com/originals/f7/ca/00/f7ca0065ebb40873f051bf45b91370c3.png',
         title: 'Cafe Cafe',
-        category: 'Matematica'
+        category: 'Matematica',
+        tags: ['Calculo', 'El pepe', 'Prueba']
     },
     {
         link: 'https://i.pinimg.com/originals/f7/ca/00/f7ca0065ebb40873f051bf45b91370c3.png',
         title: 'Jhon',
-        category: 'Nacho'
+        category: 'Lengua'
     },
     {
         link: 'https://i.pinimg.com/originals/f7/ca/00/f7ca0065ebb40873f051bf45b91370c3.png',
         title: 'Tilin',
-        category: 'Nacho'
+        category: 'Historia'
     },
     {
         link: 'https://i.pinimg.com/originals/f7/ca/00/f7ca0065ebb40873f051bf45b91370c3.png',
         title: 'Ete Sech',
-        category: 'Nacho'
+        category: 'Historia'
     },
     {
         link: 'https://i.pinimg.com/originals/f7/ca/00/f7ca0065ebb40873f051bf45b91370c3.png',
         title: 'Potatzio',
-        category: 'Nacho'
+        category: 'Matematica'
     },
     {
         link: 'https://i.pinimg.com/originals/f7/ca/00/f7ca0065ebb40873f051bf45b91370c3.png',
         title: 'Pachani',
-        category: 'Nacho'
+        category: 'Programacion'
     },
     {
         link: 'https://i.pinimg.com/originals/f7/ca/00/f7ca0065ebb40873f051bf45b91370c3.png',
         title: 'Pollo',
-        category: 'Nacho'
+        category: 'Programacion'
     },
     {
         link: 'https://i.pinimg.com/originals/f7/ca/00/f7ca0065ebb40873f051bf45b91370c3.png',
         title: 'George',
-        category: 'Nacho'
+        category: 'Biologia'
     },
     {
         link: 'https://i.pinimg.com/originals/f7/ca/00/f7ca0065ebb40873f051bf45b91370c3.png',
         title: 'Esti',
-        category: 'Nacho'
+        category: 'Lengua'
     }
 ];

@@ -1,5 +1,4 @@
 const categories = [];
-const visibleCategories = [];
 const books = [];
 
 class Book {
@@ -18,15 +17,10 @@ class Book {
 
 		books.push(this);
 
-		if (!this.category) {
-			return;
-		}
+		if (!this.category) return;
 
         if (categories.indexOf(this.category) === -1) {
             categories.push(this.category);
-        }
-        if (visible && visibleCategories.indexOf(this.category) === -1) {
-            visibleCategories.push(this.category);
         }
     }
 
