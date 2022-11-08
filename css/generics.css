@@ -1,3 +1,9 @@
+/* Azul Oscuro: #3a5c84
+Azul Claro: #8a99b4
+Gris Oscuro: #a8b3c3
+Gris Claro: #d0d7e1
+Color Botón: #abb6c7 */
+
 * {
     margin: 0;
     padding: 0;
@@ -17,8 +23,9 @@ body {
     background-color: #2e2e28;
     padding: 72px 24px;
     color: #fff;
-    background: url('https://static.wixstatic.com/media/11062b_a6e1bb8d93704b859a65ba5d3dd3645a~mv2.jpg/v1/fill/w_1253,h_361,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/11062b_a6e1bb8d93704b859a65ba5d3dd3645a~mv2.jpg');
-    background-position: center;
+    background: url('../img/biblioteca.png');
+    background-position: top;
+    background-size: cover;
     border-radius: 8px;
 }
 
@@ -30,13 +37,47 @@ body {
     font-size: 1.25em;
 }
 
+.nav {
+    margin: 8px auto;
+    width: calc(100vw - 64px);
+    padding: 24px;
+    gap: 12px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #a8b3c3;
+    border-radius: 8px;
+}
+
+.nav__button {
+    background-color: #a8b3c3;
+    text-align: center;
+    padding: .8rem 1.1rem;
+    border-radius: 25px;
+    border: 3px solid #080808;
+    font-size: 1.3rem;
+    transition: .5s;
+}
+
+.nav__link {
+    text-decoration: none;
+    color: #080808;
+}
+
 .footer {
-    background-color: #6f4e37;
+    background-color: #a8b3c3;
     text-align: center;
     padding: 12px;
+    color: #000;
 }
 
 .credits {
     text-align: end;
     font-weight: bold;
+}
+
+.nav__button:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+    border-radius: 30px;
 }
