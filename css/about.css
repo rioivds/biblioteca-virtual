@@ -1,0 +1,8 @@
+.content {
+    text-align: center;
+    width: calc(100vw - 64px);
+    margin: 8px auto;
+    padding: 16px;
+    background-color: #fff;
+    border-radius: 8px;
+}

@@ -6,7 +6,7 @@ class Book {
         this.link = link;
         this.category = Common.normalize(category);
         this.tags = tags;
-        this.title = Common.normalize(title);
+        this.title = title;
 		this.elt = document.createElement('div');
 		this.elt.classList.add('book');
 		this.elt.innerHTML = `

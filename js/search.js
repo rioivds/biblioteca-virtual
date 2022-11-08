@@ -1,7 +1,7 @@
 const searchBar = document.querySelector('.search-bar-input');
 
 function search(value) {
-	value = value.toLowerCase();
+	value = Common.normalize(value);
 
 	if (value === 'nacho') {
 		books.forEach(e => e.elt.style.display = 'none');
@@ -13,14 +13,13 @@ function search(value) {
 	}
 
 	for (const book of books) {
-		let title = book.title.toLowerCase();
-		let category = book.category.toLowerCase();
-        let tags = book.tags.map(e => e.toLowerCase());
-		let input = value;
+		let title = Common.normalize(book.title);
+		let category = book.category;
+        let tags = book.tags.map(e => Common.normalize(e));
         let includesTag = false;
 		let finded = false;
 
-		if (title.includes(input) || category.includes(input)) {
+		if (title.includes(value) || category.includes(value)) {
 			book.elt.style.display = 'flex';
 			finded = true;
 			continue;
@@ -28,7 +27,7 @@ function search(value) {
 
 		if (!finded) {
 			for (const tag of tags) {
-				if (tag.includes(input)) {
+				if (tag.includes(value)) {
 					book.elt.style.display = 'flex';
 					includesTag = true;
 					break;
