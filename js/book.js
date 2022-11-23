@@ -2,7 +2,7 @@ const categories = [];
 const books = [];
 
 class Book {
-    constructor({link, category = '', tags = [], title, visible = true}) {
+    constructor({link, category = '', tags = [], title}) {
         this.link = link;
         this.category = Common.normalize(category);
         this.tags = tags;
@@ -17,9 +17,7 @@ class Book {
 
 		books.push(this);
 
-		if (!this.category) return;
-
-        if (categories.indexOf(this.category) === -1) {
+        if (this.category && categories.indexOf(this.category) === -1) {
             categories.push(this.category);
         }
     }

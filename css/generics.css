@@ -31,6 +31,7 @@ body {
 
 .header h1 {
     display: inline-block;
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
 }
 
 .subtitle {
@@ -53,8 +54,8 @@ body {
     background-color: #a8b3c3;
     text-align: center;
     padding: .8rem 1.1rem;
-    border-radius: 25px;
     border: 3px solid #080808;
+    border-radius: 16px 25px 16px 25px;
     font-size: 1.3rem;
     transition: .5s;
 }
@@ -64,20 +65,42 @@ body {
     color: #080808;
 }
 
-.footer {
-    background-color: #a8b3c3;
-    text-align: center;
-    padding: 12px;
-    color: #000;
-}
-
-.credits {
-    text-align: end;
-    font-weight: bold;
-}
-
 .nav__button:hover {
     cursor: pointer;
     transform: scale(1.1);
     border-radius: 30px;
 }
+
+.footer {
+    background-color: #a8b3c3;
+    padding: 12px;
+    color: #000;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer div, .footer h3 {
+    flex-grow: 1;
+}
+
+.footer h3 {
+    text-align: center;
+}
+
+.institucional {
+    padding: 6px;
+    text-align: start;
+}
+
+.credits {
+    text-align: end;
+}
+
+.mauricio {
+    font-weight: bold;
+}
+
+/* .credits {
+    text-align: end;
+    font-weight: bold;
+} */
