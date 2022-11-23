@@ -1,0 +1,106 @@
+/* Azul Oscuro: #3a5c84
+Azul Claro: #8a99b4
+Gris Oscuro: #a8b3c3
+Gris Claro: #d0d7e1
+Color Botón: #abb6c7 */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    font-family: sans-serif;
+}
+
+body {
+    background-color: #2c2c28;
+}
+
+.header {
+    margin: 8px auto;
+    width: calc(100vw - 64px);
+    text-align: center;
+    background-color: #2e2e28;
+    padding: 72px 24px;
+    color: #fff;
+    background: url('../img/biblioteca.png');
+    background-position: top;
+    background-size: cover;
+    border-radius: 8px;
+}
+
+.header h1 {
+    display: inline-block;
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+}
+
+.subtitle {
+    font-size: 1.25em;
+}
+
+.nav {
+    margin: 8px auto;
+    width: calc(100vw - 64px);
+    padding: 24px;
+    gap: 12px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #a8b3c3;
+    border-radius: 8px;
+}
+
+.nav__button {
+    background-color: #a8b3c3;
+    text-align: center;
+    padding: .8rem 1.1rem;
+    border: 3px solid #080808;
+    border-radius: 16px 25px 16px 25px;
+    font-size: 1.3rem;
+    transition: .5s;
+}
+
+.nav__link {
+    text-decoration: none;
+    color: #080808;
+}
+
+.nav__button:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+    border-radius: 30px;
+}
+
+.footer {
+    background-color: #a8b3c3;
+    padding: 12px;
+    color: #000;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer div, .footer h3 {
+    flex-grow: 1;
+}
+
+.footer h3 {
+    text-align: center;
+}
+
+.institucional {
+    padding: 6px;
+    text-align: start;
+}
+
+.credits {
+    text-align: end;
+}
+
+.mauricio {
+    font-weight: bold;
+}
+
+/* .credits {
+    text-align: end;
+    font-weight: bold;
+} */

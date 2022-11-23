@@ -1,0 +1,105 @@
+.content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 4.5rem;
+    background-color: #3a5c84;
+    padding: 24px;
+    width: calc(100vw - 64px);
+    margin: 8px auto;
+    border-radius: 8px;
+}
+
+.about {
+    background-color: #3a5c84;
+    border: 3px solid #f5f5f5;
+    color: #f5f5f5;
+    padding: 24px 48px;
+    text-align: center;
+    border-radius: 12px;
+}
+
+.content__about__link a {
+    color: #f5f5f5;
+}
+
+.links-container {
+    width: 45%;
+    text-align: center;
+    color: #f5f5f5;
+}
+
+.links {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 6.5rem;
+    padding: 36px 8px;
+}
+
+.links li {
+    list-style: none;
+    width: 100%;
+    text-align: center;
+    padding: 48px 0;
+    background-position: center;
+    border-radius: 8px;
+}
+
+.links li:first-child {
+    border: 3px solid #f5f5f5;
+    border-radius: 16px;
+    padding: 16px;
+    width: 50%;
+    margin-top: 8px;
+}
+
+.links li a {
+    text-decoration: none;
+    color: #f5f5f5;
+    font-size: 1.75em;
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+}
+
+.links-matematica {
+    background: url('../img/matematicas.jpg');
+}
+
+.links-literatura {
+    background: url('../img/lengua_y_lit.jpg');
+}
+
+.links-biologia {
+    background: url('../img/biologia.jpg');
+}
+
+.links-especialidad {
+    background: url('../img/programacion.jpg');
+}
+
+.links-historia {
+    background: url('../img/historia.jpg');
+}
+
+.links-geografia {
+    background: url('../img/geografia.jpg');
+}
+
+.links-musica {
+    background: url('../img/musica.jpg');   
+}
+
+.links-fisica {
+    background: url('../img/fisica.jpg');
+}
+
+.links-quimica {
+    background: url('../img/quimica.png');
+}
+
+.links-ingles {
+    background: url('../img/ingles.jpg');
+    background-size: cover;
+}
