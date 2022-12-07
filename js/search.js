@@ -1,13 +1,13 @@
 const searchBar = document.querySelector('.search-bar-input');
 
 function search(value) {
+	let empty = true;
 	value = Common.normalize(value);
 
 	if (value === 'nacho') {
-		books.forEach(e => {
-			e.elt.style.display = 'none'
-		});
+		books.forEach(e => e.elt.style.display = 'none');
 		document.getElementById('nacho').style.display = 'block';
+		empty = false;
 		return;
 	} else {
 		document.getElementById('nacho').style.display = 'none';
@@ -21,23 +21,28 @@ function search(value) {
 
 		if (title.includes(value) || book.category.includes(value)) {
 			book.elt.style.display = 'flex';
-			// finded = true;
+			empty = false;
 			continue;
 		}
 
-		// if (!finded) {
-		for (const tag of tags) {
-			if (tag.includes(value)) {
-				book.elt.style.display = 'flex';
-				includesTag = true;
-				break;
-			}
-		}
-		// }
+    for (const tag of tags) {
+      if (tag.includes(value)) {
+        book.elt.style.display = 'flex';
+        includesTag = true;
+        empty = false;
+        break;
+      }
+    }
 
-        if (includesTag) continue;
+    if (includesTag) continue;
 
 		book.elt.style.display = 'none';
+	}
+	
+	if (empty) {
+		document.getElementById('empty-search').style.display = 'flex';
+	} else {
+		document.getElementById('empty-search').style.display = 'none';
 	}
 }
 
