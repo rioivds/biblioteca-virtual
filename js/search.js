@@ -25,18 +25,16 @@ function search(value) {
 			continue;
 		}
 
-		// if (!finded) {
-			for (const tag of tags) {
-				if (tag.includes(value)) {
-					book.elt.style.display = 'flex';
-					includesTag = true;
-					empty = false;
-					break;
-				}
-			}
-		// }
+    for (const tag of tags) {
+      if (tag.includes(value)) {
+        book.elt.style.display = 'flex';
+        includesTag = true;
+        empty = false;
+        break;
+      }
+    }
 
-        if (includesTag) continue;
+    if (includesTag) continue;
 
 		book.elt.style.display = 'none';
 	}
